@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Kumar | Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- SVG Defs for gradients -->
+    <svg style="width: 0; height: 0; position: absolute;" aria-hidden="true" focusable="false">
+        <defs>
+            <linearGradient id="primary-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#8b5cf6" />
+                <stop offset="100%" stop-color="#3b82f6" />
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <div class="particles-container" id="particles"></div>
+
+    <header class="glass-header">
+        <nav class="container nav-bar">
+            <div class="logo">
+                <span class="gradient-text" style="font-size: 1.5rem;">Portfolio</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="lang-selector">
+                    <span class="btn btn-outline" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">
+                        <i class="fas fa-globe"></i> EN
+                    </span>
+                </div>
+                <button class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero container">
+            <div class="hero-content">
+                <h2 class="hero-greeting">Hey, I'm</h2>
+                <h1 class="hero-name gradient-text">Abhishek Kumar</h1>
+                <h3 class="hero-title">3rd Year Full Stack Developer Student</h3>
+                <p class="hero-description">
+                    Motivated 3rd year Full Stack Developer student at Lovely Professional University,
+                    passionate about web development, software engineering, and creating innovative digital solutions.
+                </p>
+                <div class="hero-btns">
+                    <a href="FinalCv.pdf" class="btn btn-primary" download><i class="fas fa-download"></i>
+                        Download CV</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/abhii-48" target="_blank" class="social-box"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/abhishek-kumar-535000255/" target="_blank"
+                        class="social-box"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:2101abhishekkr@gmail.com" class="social-box"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-frame">
+                    <img src="img/Gemini_Generated_Image_75bnu075bnu075bn.png" alt="Abhishek Kumar"
+                        onerror="this.src='https://via.placeholder.com/400x400?text=Abhishek+Kumar'">
+                    <div class="glowing-orb"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section container">
+            <div class="section-header">
+                <h2 class="gradient-text">About Me</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="about-grid relative">
+                <div class="about-bg-glow"></div>
+                <div class="glass-card about-glass-card about-text">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p><span class="highlight-text">CS Student & Full-Stack Architect</span> dedicated to building
+                        high-performance, end-to-end web applications. I bridge the gap between intuitive user
+                        interfaces and robust backend logic to turn complex ideas into scalable digital reality.</p>
+                    <br>
+                    <p>I thrive on the persistent cycle of troubleshooting and refining&mdash;turning complex technical
+                        hurdles into clean, functional reality. To me, every bug is an opportunity to sharpen my craft
+                        and ensure a more <span class="highlight-text">seamless experience</span> for the end-user.</p>
+                    <br>
+                    <p>When I'm not behind a keyboard, you'll find me behind a camera lens. My pursuit of the "perfect
+                        perspective" extends into my photography, where I've learned that great results&mdash;whether in
+                        code or a composition&mdash;depend on <span class="highlight-text">patience, timing, and a sharp
+                            eye for detail</span>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Values -->
+        <section id="mission" class="mission-section container">
+            <div class="section-header">
+                <h2 class="gradient-text">Mission & Values</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="mission-grid">
+                <div class="glass-card mission-card">
+                    <div class="mission-icon icon-vision"><i class="fas fa-eye"></i></div>
+                    <h3>Vision</h3>
+                    <p>Become an expert developer, creating high-performance solutions.</p>
+                </div>
+                <div class="glass-card mission-card">
+                    <div class="mission-icon icon-innovation"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Innovation</h3>
+                    <p>Develop modern apps using the latest technologies.</p>
+                </div>
+                <div class="glass-card mission-card">
+                    <div class="mission-icon icon-quality"><i class="fas fa-award"></i></div>
+                    <h3>Quality</h3>
+                    <p>Rigorous development processes and modern methodologies.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section container">
+            <div class="section-header">
+                <h2 class="gradient-text">My Skills</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="bar-graph-component">
+                        <div class="graph-metrics-area">
+                            <div class="y-axis">
+                                <div class="y-tick">100</div>
+                                <div class="y-tick">75</div>
+                                <div class="y-tick">50</div>
+                                <div class="y-tick">25</div>
+                                <div class="y-tick">0</div>
+                            </div>
+                            <div class="graph-bars">
+                                <div class="graph-bar-group">
+                                    <span class="percentage">76%</span>
+                                    <div class="vertical-progress-bar">
+                                        <div class="vertical-progress" style="height: 76%"></div>
+                                    </div>
+                                </div>
+                                <div class="graph-bar-group">
+                                    <span class="percentage">80%</span>
+                                    <div class="vertical-progress-bar">
+                                        <div class="vertical-progress" style="height: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="graph-bar-group">
+                                    <span class="percentage">87%</span>
+                                    <div class="vertical-progress-bar">
+                                        <div class="vertical-progress" style="height: 87%"></div>
+                                    </div>
+                                </div>
+                                <div class="graph-bar-group">
+                                    <span class="percentage">79%</span>
+                                    <div class="vertical-progress-bar">
+                                        <div class="vertical-progress" style="height: 79%"></div>
+                                    </div>
+                                </div>
+                                <div class="graph-bar-group">
+                                    <span class="percentage">91%</span>
+                                    <div class="vertical-progress-bar">
+                                        <div class="vertical-progress" style="height: 91%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="x-axis">
+                            <span class="skill-name">Java</span>
+                            <span class="skill-name">C++</span>
+                            <span class="skill-name">C</span>
+                            <span class="skill-name">Python</span>
+                            <span class="skill-name">JS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Development Stack</h3>
+                    <div class="bar-graph-component">
+                        <div class="graph-metrics-area">
+                            <div class="y-axis">
+                                <div class="y-tick">100</div>
+                                <div class="y-tick">75</div>
+                                <div class="y-tick">50</div>
+                                <div class="y-tick">25</div>
+                                <div class="y-tick">0</div>
+                            </div>
+                            <div class="graph-bars">
+                                <div class="graph-bar-group">
+                                    <span class="percentage">81%</span>
+                                    <div class="vertical-progress-bar">
+                                        <div class="vertical-progress" style="height: 81%"></div>
+                                    </div>
+                                </div>
+                                <div class="graph-bar-group">
+                                    <span class="percentage">86%</span>
+                                    <div class="vertical-progress-bar">
+                                        <div class="vertical-progress" style="height: 86%"></div>
+                                    </div>
+                                </div>
+                                <div class="graph-bar-group">
+                                    <span class="percentage">95%</span>
+                                    <div class="vertical-progress-bar">
+                                        <div class="vertical-progress" style="height: 95%"></div>
+                                    </div>
+                                </div>
+                                <div class="graph-bar-group">
+                                    <span class="percentage">79%</span>
+                                    <div class="vertical-progress-bar">
+                                        <div class="vertical-progress" style="height: 79%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="x-axis">
+                            <span class="skill-name">React</span>
+                            <span class="skill-name">Node</span>
+                            <span class="skill-name">UI/UX</span>
+                            <span class="skill-name">DB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section container">
+            <div class="section-header">
+                <h2 class="gradient-text">Projects</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card flip-card" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="glass-card flip-card-front">
+                            <div class="project-img">
+                                <img src="./img/rehab-tracer.png" alt="Rehabilitation Tracer Live Preview">
+                            </div>
+                            <div class="project-info">
+                                <h4>Rehabilitation Tracer</h4>
+                                <p>A monitoring system for tracking rehabilitation progress.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">HealthTech</span><span class="tech-tag">Monitoring</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/abhii-48/RehabilitationTracer" class="btn btn-outline" target="_blank" onclick="event.stopPropagation()">View Repo</a>
+                                    <a href="https://rehabilitation-tracer.vercel.app" class="btn btn-primary" target="_blank" onclick="event.stopPropagation()">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="glass-card flip-card-back">
+                            <h4>Project Features</h4>
+                            <ul class="feature-list">
+                                <li><strong>Direct Communication:</strong> Patients and doctors can easily talk with each other directly through the app.</li>
+                                <li><strong>Medical Records:</strong> Quick and secure access to medical reports and prescriptions online.</li>
+                                <li><strong>Pain Tracking:</strong> Patients can easily explain how much pain they are in by picking a number from 1 to 10.</li>
+                            </ul>
+                            <div class="project-buttons mt-auto">
+                                <a href="https://rehabilitation-tracer.vercel.app" class="btn btn-primary" target="_blank" onclick="event.stopPropagation()">Try it out!</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card flip-card" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-card-inner">
+                        <div class="glass-card flip-card-front">
+                            <div class="project-img">
+                                <img src="./img/mental-health-checker.jpeg" alt="Mental Health Checker Live Preview">
+                            </div>
+                            <div class="project-info">
+                                <h4>Mental Health Checker</h4>
+                                <p>A web application focused on mental well-being assessment.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">React</span><span class="tech-tag">Health</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/abhii-48/Mental-Health-Checker" class="btn btn-outline" target="_blank" onclick="event.stopPropagation()">View Repo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="glass-card flip-card-back">
+                            <h4>Project Features</h4>
+                            <ul class="feature-list">
+                                <li><strong>Mood Tracking:</strong> Monitor daily emotional states and patterns.</li>
+                                <li><strong>Health Assessment:</strong> Comprehensive mental health score (0-100) based on user inputs.</li>
+                                <li><strong>Detailed Breakdown:</strong> Visualize sleep quality, stress levels, and social interaction metrics.</li>
+                            </ul>
+                            <div class="project-buttons mt-auto">
+                                <a href="https://github.com/abhii-48/Mental-Health-Checker" class="btn btn-primary" target="_blank" onclick="event.stopPropagation()">Try it out!</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="glass-card project-card">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/400x250?text=Mem+Allocation"
+                            alt="Real-time Mem Allocation">
+                    </div>
+                    <div class="project-info">
+                        <h4>Real-time Memory Allocation</h4>
+                        <p>Visualizing real-time memory management algorithms.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Systems</span><span class="tech-tag">Algorithms</span>
+                        </div>
+                        <a href="https://github.com/abhii-48/Real-time-memallocation" class="btn btn-outline"
+                            target="_blank">View Repo</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications-section container">
+            <div class="section-header">
+                <h2 class="gradient-text">Certifications</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="certifications-grid">
+                <div class="glass-card certification-card">
+                    <div class="cert-img">
+                        <img src="img/nptel-cert.png" alt="NPTEL Cloud Computing Certificate">
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-header">
+                            <div class="cert-icon">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <h4>NPTEL Cloud Computing</h4>
+                        </div>
+                        <p>Elite Certificate | Cloud Infrastructure</p>
+                        <div class="cert-btns">
+                            <a href="NPTEL Cloud Computing.pdf" target="_blank" class="btn btn-outline btn-sm">
+                                <i class="fas fa-eye"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Summer Training Certificate -->
+                <div class="glass-card certification-card">
+                    <div class="cert-img">
+                        <img src="img/summer-training-cert.png" alt="Summer Training Certificate">
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-header">
+                            <div class="cert-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h4>Summer Training Certificate</h4>
+                        </div>
+                        <p>Summer Training Program | Technical Skills</p>
+                        <div class="cert-btns">
+                            <a href="Summer training certificate.pdf" target="_blank" class="btn btn-outline btn-sm">
+                                <i class="fas fa-eye"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-card certification-card">
+                    <div class="cert-img">
+                        <img src="img/c-mastery-cert.png" alt="Mastering in C Certificate">
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-header">
+                            <div class="cert-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4>Mastering in C</h4>
+                        </div>
+                        <p>Basic to Beyond | Technical Certification</p>
+                        <div class="cert-btns">
+                            <a href="Mastering in CBasic to Beyond.pdf" target="_blank" class="btn btn-outline btn-sm">
+                                <i class="fas fa-eye"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-card certification-card">
+                    <div class="cert-img">
+                        <img src="img/sebi-cert.png" alt="SEBI Investor Certificate">
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-header">
+                            <div class="cert-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>SEBI Investor Certificate</h4>
+                        </div>
+                        <p>Financial Literacy & Investment</p>
+                        <div class="cert-btns">
+                            <a href="SEBI Investor Certificate.pdf" target="_blank" class="btn btn-outline btn-sm">
+                                <i class="fas fa-eye"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- New Certifications -->
+                <div class="glass-card certification-card">
+                    <div class="cert-img">
+                        <img src="img/prompt-engineering-cert.png" alt="ChatGPT-4 Prompt Engineering: ChatGPT, Generative AI & LLM">
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-header">
+                            <div class="cert-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h4>ChatGPT-4 Prompt Engineering: ChatGPT, Generative AI & LLM</h4>
+                        </div>
+                        <p>Infosys Springboard | Generative AI & LLM</p>
+                        <div class="cert-btns">
+                            <a href="img/prompt-engineering-cert.png" target="_blank" class="btn btn-outline btn-sm">
+                                <i class="fas fa-eye"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-card certification-card">
+                    <div class="cert-img">
+                        <img src="img/generative-ai-mastery-cert.png" alt="Master Generative AI & Generative AI tools (ChatGPT & more)">
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-header">
+                            <div class="cert-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4>Master Generative AI & Generative AI tools (ChatGPT & more)</h4>
+                        </div>
+                        <p>Infosys Springboard | GenAI Tools & ChatGPT</p>
+                        <div class="cert-btns">
+                            <a href="img/generative-ai-mastery-cert.png" target="_blank" class="btn btn-outline btn-sm">
+                                <i class="fas fa-eye"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-card certification-card">
+                    <div class="cert-img">
+                        <img src="img/no-code-ai-cert.png" alt="Build Generative AI Apps and Solutions with No-Code Tools">
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-header">
+                            <div class="cert-icon">
+                                <i class="fas fa-layer-group"></i>
+                            </div>
+                            <h4>Build Generative AI Apps and Solutions with No-Code Tools</h4>
+                        </div>
+                        <p>Infosys Springboard | Build Solutions</p>
+                        <div class="cert-btns">
+                            <a href="img/no-code-ai-cert.png" target="_blank" class="btn btn-outline btn-sm">
+                                <i class="fas fa-eye"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-card certification-card">
+                    <div class="cert-img">
+                        <img src="img/computational-theory-cert.png" alt="Computational Theory: Language Principle & Finite Automata Theory">
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-header">
+                            <div class="cert-icon">
+                                <i class="fas fa-square-root-variable"></i>
+                            </div>
+                            <h4>Computational Theory: Language Principle & Finite Automata Theory</h4>
+                        </div>
+                        <p>Infosys Springboard | Automata Theory</p>
+                        <div class="cert-btns">
+                            <a href="img/computational-theory-cert.png" target="_blank" class="btn btn-outline btn-sm">
+                                <i class="fas fa-eye"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 class="gradient-text">Contact Me</h2>
+                    <p class="contact-subtitle">Feel free to reach out for collaborations or opportunities!</p>
+                    <div class="contact-cards">
+                        <div class="contact-card glass-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-card-info">
+                                <h3>Email</h3>
+                                <a href="mailto:2101abhishekkr@gmail.com">2101abhishekkr@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-card glass-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-card-info">
+                                <h3>Phone</h3>
+                                <p>+91 7061702158</p>
+                            </div>
+                        </div>
+                        <div class="contact-card glass-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-location-dot"></i>
+                            </div>
+                            <div class="contact-card-info">
+                                <h3>Location</h3>
+                                <p>Punjab, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-card contact-box" style="padding: 2.5rem;">
+                    <form action="https://formspree.io/f/xvgzrrar" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="_replyto" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <input type="hidden" name="_subject" value="New Portfolio Message!">
+                        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="social-links">
+                <a href="https://github.com/abhii-48" target="_blank" class="social-icon" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:2101abhishekkr@gmail.com" class="social-icon" aria-label="Gmail">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/abhishek-kumar-535000255/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            <p class="copyright">&copy; 2026 Abhishek Kumar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
