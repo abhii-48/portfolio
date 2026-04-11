@@ -46,11 +46,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 entry.target.classList.add('revealed');
                 // Trigger progress bars if it's the skills section
                 if (entry.target.id === 'skills') {
-                    document.querySelectorAll('.progress').forEach(p => {
+                    // Trigger horizontal progress bars
+                    document.querySelectorAll('.progress-fill-horizontal').forEach(p => {
                         const width = p.style.width;
                         p.style.width = '0%';
                         setTimeout(() => {
                             p.style.width = width;
+                        }, 100);
+                    });
+                    
+                    // Trigger vertical progress bars (resetting them to trigger CSS animation)
+                    document.querySelectorAll('.vertical-progress').forEach(p => {
+                        const height = p.style.height;
+                        p.style.height = '0%';
+                        setTimeout(() => {
+                            p.style.height = height;
                         }, 100);
                     });
                 }
@@ -138,9 +148,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 icon.classList.replace('fa-moon', 'fa-sun');
                 localStorage.setItem('theme', 'light');
             } else {
-                icon.classList.replace('fa-sun', 'fa-moon');
                 localStorage.setItem('theme', 'dark');
             }
+        });
+    }
+
+    // About Stat Card 3D Tilt & Mouse Glow
+    const statCard = document.querySelector('#about-stat-card');
+    if (statCard) {
+        statCard.addEventListener('mousemove', (e) => {
+            const rect = statCard.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            
+            const rotateX = (y - centerY) / 15;
+            const rotateY = (centerX - x) / 15;
+            
+            statCard.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px) scale(1.02)`;
+            statCard.style.setProperty('--mouse-x', `${(x / rect.width) * 100}%`);
+            statCard.style.setProperty('--mouse-y', `${(y / rect.height) * 100}%`);
+        });
+        
+        statCard.addEventListener('mouseleave', () => {
+            statCard.style.transform = `rotateX(0deg) rotateY(0deg) translateY(0) scale(1)`;
         });
     }
 });
